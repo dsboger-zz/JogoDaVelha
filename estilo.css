@@ -11,3 +11,13 @@
 #jogo{
 	display:none;
 }
+
+#timer {
+	font-size: 60pt;
+}
+
+#gameover {
+	font-size: 70pt;
+	color: red;
+>>>>>>> Coloquei o temporizador!
+}
