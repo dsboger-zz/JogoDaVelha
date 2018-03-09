@@ -17,6 +17,10 @@ function relogio(){
 }
 }
 
+var pontoO = 0;
+var pontoX = 0;
+var empate = 0;
+
 function clicado(botao) {
 
 	if (botao.innerText != "")
@@ -30,7 +34,22 @@ function clicado(botao) {
 		tempo = 21;
 		botao.innerText = "o";
 		vez = "x";
-	}
+	} 
+}
+
+function marcarX () {
+	pontoX += 1;
+	document.getElementById("px").innerText = pontoX;
+}
+
+function marcarO () {
+	pontoO += 1;
+	document.getElementById("po").innerText = pontoO;
+}
+
+function marcarE () {
+	empate += 1;
+	document.getElementById("pe").innerText = empate;
 }
 
 function inicia(){
