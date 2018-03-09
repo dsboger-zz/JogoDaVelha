@@ -13,3 +13,8 @@ function clicado(botao) {
 		vez = "x";
 	}
 }
+
+function inicia(){
+	document.getElementById('jogo').style.display = "grid";
+	document.getElementById('boas-vindas').style.display = "none";
+}
