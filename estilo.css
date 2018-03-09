@@ -8,7 +8,6 @@
 	font-size: 50pt;
 }
 
-
 #reiniciar{
 	display: grid;
 	grid-template-columns: 100px;
@@ -30,4 +29,8 @@
 #gameover {
 	font-size: 70pt;
 	color: red;
+}
+#return button{
+    display: block;
+    
 }
