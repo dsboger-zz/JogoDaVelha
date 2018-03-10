@@ -58,3 +58,18 @@ function inicia(){
 	x = setInterval(relogio, 1000);
 }
 
+function depoisqueacabareinicia() {
+	vez = "x"
+		
+	document.getElementById("bt_0_0").innerText = "";
+	document.getElementById("bt_0_1").innerText = "";
+	document.getElementById("bt_0_2").innerText = "";
+	document.getElementById("bt_1_0").innerText = "";
+	document.getElementById("bt_1_1").innerText = "";
+	document.getElementById("bt_1_2").innerText = "";
+	document.getElementById("bt_2_0").innerText = "";
+	document.getElementById("bt_2_1").innerText = "";
+	document.getElementById("bt_2_2").innerText = "";
+	
+	
+}

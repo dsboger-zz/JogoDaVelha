@@ -8,6 +8,17 @@
 	font-size: 50pt;
 }
 
+
+#reiniciar{
+	display: grid;
+	grid-template-columns: 100px;
+	grid-template-rows: 50px;
+}
+
+#reiniciar button {
+	font-size: 15pt
+}
+
 #jogo{
 	display:none;
 }
