@@ -40,6 +40,35 @@ function clicado(botao) {
 		vez = "x";
 	} 
 	ultima = botao;
+	
+	if (		valor(0,0) != "" && valor(0,0) == valor(0,1) && valor(0,1) == valor(0,2) ||
+			valor(1,0) != "" && valor(1,0) == valor(1,1) && valor(1,1) == valor(1,2) ||
+			valor(2,0) != "" && valor(2,0) == valor(2,1) && valor(2,1) == valor(2,2) ||
+		
+			valor(0,0) != "" && valor(0,0) == valor(1,0) && valor(1,0) == valor(2,0) ||
+			valor(0,1) != "" && valor(0,1) == valor(1,1) && valor(1,1) == valor(2,1) ||
+			valor(0,2) != "" && valor(0,2) == valor(1,2) && valor(1,2) == valor(2,2) ||
+		
+			valor(0,0) != "" && valor(0,0) == valor(1,1) && valor(1,1) == valor(2,2) ||
+			valor(0,2) != "" && valor(0,2) == valor(1,1) && valor(1,1) == valor(2,0)) {
+		if (vez == "x")
+			marcarO();
+		else
+			marcarX();
+	} else {
+		var empatou = true;
+		for (var x = 0; x <= 2; x++)
+			for (var y = 0; y <= 2; y++)
+				if (valor(x,y) == "")
+					empatou = false;
+		if (empatou)
+			marcarE();
+	}	
+}
+
+function valor(x, y) {
+	var botao = document.getElementById("bt_" + x + "_" + y);
+	return botao.innerText;
 }
 
 function marcarX () {
